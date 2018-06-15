@@ -9,6 +9,6 @@ pages:
     paths:
     - public
 
-    only:
-    - develop
+  only:
+  - develop
 
