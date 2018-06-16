@@ -1,0 +1,116 @@
+#welcome-image {
+  .image-section {
+    img {
+      height: 40vh;
+      background-size: cover;
+      width: 97vw;
+    }
+  }
+}
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  flex-direction: column;
+  padding: 8em;
+  h2{
+    text-align: center;
+    font-family: 'Cabin Sketch', cursive;
+  }
+  p{
+    text-align: center;
+    font-family: 'Cookie', cursive;
+  }
+  img {
+    float: left;
+    width: 30em;
+  }
+}
+
+#app-section {
+  margin:0;
+  padding:0;
+  background-color:#FF9800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:#000;
+  #app {
+    position:absolute;
+    font-family: 'Merienda', cursive;
+    font-size: 3em;
+  }
+}
+
+#cards{
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Three columns side by side */
+  .column {
+    float: left;
+    width: 30.0%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .title {
+    color: grey;
+  }
+
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+
+  .button:hover {
+    background-color: #555;
+  }
+}
+
+
+
+// fonts
+
+// font-family: 'Cabin Sketch', cursive;
+// font-family: 'Cookie', cursive;
+// font-family: 'Alice', serif;
+// font-family: 'Rancho', cursive;
+// font-family: 'El Messiri', sans-serif;
+// font-family: 'Merienda', cursive;
+// font-family: 'Overlock', cursive;

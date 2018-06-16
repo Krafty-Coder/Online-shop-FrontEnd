@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Alice|Cabin+Sketch|Cookie|El+Messiri|Merienda|Overlock|Rancho");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js");
+#welcome-image .image-section img {
+  height: 40vh;
+  background-size: cover;
+  width: 97vw; }
+
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  flex-direction: column;
+  padding: 8em; }
+  #about h2 {
+    text-align: center;
+    font-family: 'Cabin Sketch', cursive; }
+  #about p {
+    text-align: center;
+    font-family: 'Cookie', cursive; }
+  #about img {
+    float: left;
+    width: 30em; }
+
+#app-section {
+  margin: 0;
+  padding: 0;
+  background-color: #FF9800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000; }
+  #app-section #app {
+    position: absolute;
+    font-family: 'Merienda', cursive;
+    font-size: 3em; }
+
+#cards {
+  padding: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Three columns side by side */
+  /* Display the columns below each other instead of side by side on small screens */
+  /* Add some shadows to create a card effect */
+  /* Some left and right padding inside the container */
+  /* Clear floats */ }
+  #cards .column {
+    float: left;
+    width: 30.0%;
+    margin-bottom: 16px;
+    padding: 0 8px; }
+  @media screen and (max-width: 650px) {
+    #cards .column {
+      width: 100%;
+      display: block; } }
+  #cards .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+  #cards .container {
+    padding: 0 16px; }
+  #cards .container::after, #cards .row::after {
+    content: "";
+    clear: both;
+    display: table; }
+  #cards .title {
+    color: grey; }
+  #cards .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%; }
+  #cards .button:hover {
+    background-color: #555; }
