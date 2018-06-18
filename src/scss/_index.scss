@@ -1,9 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+}
 #welcome-image {
   .image-section {
+    padding: 0;
     img {
       height: 40vh;
       background-size: cover;
-      width: 97vw;
+      width: 100%;
     }
   }
 }
@@ -12,98 +17,150 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 40vh;
   flex-direction: column;
-  padding: 8em;
-  h2{
-    text-align: center;
-    font-family: 'Cabin Sketch', cursive;
-  }
-  p{
-    text-align: center;
-    font-family: 'Cookie', cursive;
+  padding: 1.4em;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    h2{
+      text-align: center;
+      font-family: 'Cabin Sketch', cursive;
+      font-size: 2em;
+    }
+    p{
+      text-align: center;
+      font-size: 1.5em;
+      font-family: 'Cookie', cursive;
+    }
   }
   img {
     float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 9, 7, 0.8);
+    border-radius: 10px;
     width: 30em;
   }
 }
 
 #app-section {
-  margin:0;
-  padding:0;
-  background-color:#FF9800;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  color:#000;
+  color:#111;
+  padding: 1.4em;
   #app {
     position:absolute;
     font-family: 'Merienda', cursive;
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 
 #cards{
-  padding: 3em;
+  padding: 1.4em;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* Three columns side by side */
   .column {
+    padding: 1.4em;
+    padding: 3em 0;
     float: left;
     width: 30.0%;
     margin-bottom: 16px;
     padding: 0 8px;
+    .card {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      img {
+        border: 1px;
+      }
+      .container {
+        padding: 1em 1em;
+        h2 {
+          font-family: 'Alice', serif;
+          text-align: center;
+        }
+        p {
+          font-family: 'Overlock', cursive;
+          button {
+            width: 100%;
+            background-color: blue;
+            color: white;
+            font-size: 1em;
+            font-family: 'Merienda', cursive;
+            border-radius: 15px;
+            padding: 1em 0;
+          }
+        }
+      }
+    }
   }
 
   /* Display the columns below each other instead of side by side on small screens */
   @media screen and (max-width: 650px) {
+    flex: none;
+    display:block;
+    width: 100%;
     .column {
       width: 100%;
       display: block;
     }
   }
+}
 
-  /* Add some shadows to create a card effect */
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  }
-
-  /* Some left and right padding inside the container */
-  .container {
-    padding: 0 16px;
-  }
-
-  /* Clear floats */
-  .container::after, .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  .title {
-    color: grey;
-  }
-
-  .button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-  }
-
-  .button:hover {
-    background-color: #555;
+#parallax-section {
+  padding-bottom: 4.4em;
+  .parallax {
+    height: 80vh;
+    background-image: url(../img/feature-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    .parallax-text {
+      font-size: 1em;
+      font-family: 'Cabin Sketch', cursive;
+      text-align: left;
+      margin-left: 50%;
+      width: 50%;
+      float: left;
+      position: relative;
+      padding: 3em 0;
+      line-height: 2.0;
+    }
+    button {
+      width: 50%;
+      vertical-align: middle;
+      text-align: center;
+      font-weight: 200;
+      padding: 1.2em 1.7em;
+      color: white;
+      background: black;
+      border-radius: 0.8em;
+      font-size: 1em;
+    }
   }
 }
 
-
+#footer {
+  background: gray;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 1px;
+  padding-top: 1em;
+  color: #121;
+  text-align: center;
+  .footer-stuff {
+    p {
+      font-size: 1em;
+    }
+  }
+  ul {
+    list-style: none;
+    li {
+      i {
+        font-size: 1em;
+      }
+    }
+  }
+}
 
 // fonts
 
