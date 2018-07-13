@@ -1,11 +1,11 @@
 <section id="app-section">
   <div id="app"></div>
 </section>
-<section id="welcome-image">
-  <div class="image-section">
-    <img src="../img/background.jpg" alt="krafty don shop image">
-  </div>
-</section>
+<!-- <section id="welcome-image"> -->
+<!--   <div class="image-section"> -->
+<!--     <img src="../img/background.jpg" alt="krafty don shop image"> -->
+<!--   </div> -->
+<!-- </section> -->
 <section id="about">
   <div class="wrapper">
     <h2> Thee Krafty Don Shop</h2>
@@ -74,54 +74,25 @@
     </div>
   </div>
 </section>
-<section id="cards">
-  <div class="column">
-    <div class="card">
-      <img src="img/life.png" alt="Jane" style="width:100%; height: 22em;">
-      <div class="container">
-        <h2>Tested Code</h2>
-        <p class="title">Available &amp; Onstock</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>Screwed</p>
-        <p><button class="button">Add to Cart &#128717;</button></p>
-      </div>
-    </div>
-  </div>
+<section>
 
-  <div class="column">
-    <div class="card">
-      <img src="img/code-photo.jpg" alt="Mike" style="width:100%; height: 22em;">
-      <div class="container">
-        <h2>Home: 127.0.0.1</h2>
-        <p class="title">Art</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>Some fucked up lorem</p>
-        <p><button class="button">Add to Cart &#128717;</button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="img/day-code.jpg" alt="John" style="width:100%; height: 22em;">
-      <div class="container">
-        <h2>I love Js</h2>
-        <p class="title">Solely Crafted</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>script(" how js works ")</p>
-        <p><button class="button">Add to Cart &#128717;</button></p>
-      </div>
-    </div>
-  </div>
 </section>
+<script>
+$(function() {
+$(window).scroll(function() {
+    var winTop = $(window).scrollTop();
+    if (winTop >= 30) {
+          $("body").addClass("sticky-header");
+              
+          } else {
+                $("body").removeClass("sticky-header");
+                    
+          }
+            
+})
 
-<section id="footer">
-  <div class="footer-stuff">
-    <p>social media stuff</p>
-  </div>
-  <ul>
-    <li>
-    <i class="fab fa-facebook-square"></i>
-    </li>
-  </ul>
-</section>
+})
+</script>
+
+
+

@@ -1,0 +1,20 @@
+Kiranja:
+  image: "dummy.png"
+  alt: "dummy image"
+  title: "Kiranja"
+  text1: "Some text that describes this guy lorem ipsum ipsum lorem."
+  text2: "lorem ipsum lorem ipsum"
+
+Kiranja1:
+  image: "dummy.png"
+  alt: "dummy image"
+  title: "Kiranja Mkuu"
+  text1: "Some text that describes this guy lorem ipsum ipsum lorem."
+  text2: "lorem ipsum lorem ipsum"
+
+Kiranja2:
+  image: "dummy.png"
+  alt: "dummy image"
+  title: "Naibu Kiranja"
+  text1: "Some text that describes this guy lorem ipsum ipsum lorem."
+  text2: "lorem ipsum lorem ipsum"

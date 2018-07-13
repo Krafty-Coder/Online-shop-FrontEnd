@@ -1,0 +1,27 @@
+#footer {
+  background-color: #000;
+  color: white;
+  padding: 3em 1em;
+  h2{
+    color: #321;
+  }
+  img {
+    vertical-align: middle;
+    width: 2em;
+  }
+  ul {
+    list-style: none;
+    li {
+      padding-bottom: 1em;
+    }
+    a {
+      color: white;
+    }
+  }
+  .social-links {
+    display: flex;
+    li {
+      padding: 0 1.4em;
+    }
+  }
+}

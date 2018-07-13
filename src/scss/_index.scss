@@ -2,16 +2,17 @@ body {
   margin: 0;
   padding: 0;
 }
-#welcome-image {
-  .image-section {
-    padding: 0;
-    img {
-      height: 40vh;
-      background-size: cover;
-      width: 100%;
-    }
-  }
-}
+
+// #welcome-image {
+//   .image-section {
+//     padding: 0;
+//     img {
+//       height: 40vh;
+//       background-size: cover;
+//       width: 100%;
+//     }
+//   }
+// }
 
 #about {
   display: flex;
@@ -107,7 +108,6 @@ body {
 }
 
 #parallax-section {
-  padding-bottom: 4.4em;
   .parallax {
     height: 80vh;
     background-image: url(../img/feature-bg.jpg);
@@ -121,8 +121,11 @@ body {
       width: 50%;
       float: left;
       position: relative;
-      padding: 3em 0;
+      padding: 1em 0;
       line-height: 2.0;
+      p {
+        padding: 0 4em 0 0;
+      }
     }
     button {
       width: 50%;
@@ -138,29 +141,6 @@ body {
   }
 }
 
-#footer {
-  background: gray;
-  width: 100%;
-  box-sizing: border-box;
-  position: relative;
-  min-height: 1px;
-  padding-top: 1em;
-  color: #121;
-  text-align: center;
-  .footer-stuff {
-    p {
-      font-size: 1em;
-    }
-  }
-  ul {
-    list-style: none;
-    li {
-      i {
-        font-size: 1em;
-      }
-    }
-  }
-}
 
 // fonts
 

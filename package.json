@@ -13,9 +13,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/KraftyCoder/KraftyDonShopissues"
+    "url": "https://gitlab.com/KraftyCoder/KraftyDonShop/issues"
   },
-  "homepage": "https://gitlab.com/KraftyCoder/kraftyDonShop#README",
+  "homepage": "https://gitlab.com/KraftyCoder/KraftyDonShop#README",
   "devDependencies": {
     "babel-preset-es2015": "^6.24.1",
     "babel-register": "^6.26.0",
