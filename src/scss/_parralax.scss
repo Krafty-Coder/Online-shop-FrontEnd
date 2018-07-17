@@ -1,0 +1,60 @@
+.about {
+  background: linear-gradient(to right, rgba(#000, .3), rgba(#000, .3), rgba(white, .8), rgba(white, .8)), url(../img/feature-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  .parallax-text {
+    padding: 2.6em 3em;
+    text-align: center;
+    padding-left: 50%;
+    h1 {
+      color: black;
+      font-family: 'Philosopher', sans-serif;
+      text-align: center;
+      font-size: 2.0em;
+    }
+    p {
+      color: black;
+      font-family: 'Philosopher', sans-serif;
+      font-size: 1.1em;
+      line-height: 2.3;
+      text-align: center;
+    }
+    button {
+      font-family: 'Philosopher', sans-serif;
+      background-color: #1da199;
+      height: 3.7em;
+      width: 12em;
+      border-radius: .6em;
+      cursor: pointer;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  @media screen and (max-width: 63.9375em) {
+    background: linear-gradient(to right, rgba(#fff, .3), rgba(#000, .7), rgba(#000, .7), rgba(#fff, .3)), url(../img/feature-bg.jpg);
+    background-repeat: no-repeat;
+    .parallax-text {
+      padding: 2.6em 3em;
+      h1 {
+        font-size: 1.5em;
+      }
+      p {
+        display: flex;
+        font-size: 1em;
+      }
+      i {
+        font-size: 2em;
+      }
+      h1, p {
+        color: white;
+        padding: 0;
+      }
+    }
+  }
+}
+
+
+

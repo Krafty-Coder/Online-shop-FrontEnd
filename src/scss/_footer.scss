@@ -1,27 +1,84 @@
 #footer {
-  background-color: #000;
-  color: white;
-  padding: 3em 1em;
-  h2{
-    color: #321;
+  padding: 0;
+  margin: 0;
+  background: #333;
+  text-align: center;
+  p {
+    padding: .6em 0;
+    color: white;
   }
-  img {
-    vertical-align: middle;
-    width: 2em;
+  #social {
+    padding: .3em 0;
+    border-radius: 3px;
+    cursor: default;
+    text-align: center;
+    a {
+      display: inline-flex;
+      cursor: pointer;
+      width: 2em;
+      height: 2em;
+      font-size: 2.3em;
+      transition: 0.2s ease;
+    }
+  }
+  .footer-block {
+    padding: 0;
+    margin: 0;
   }
   ul {
-    list-style: none;
+    padding: .3em 0;
     li {
-      padding-bottom: 1em;
-    }
-    a {
-      color: white;
+      list-style: none;
+      padding: 0 2em 1em 2em;
+      display: inline-block;
+      a {
+        color: rgba(white, 0.8);
+        &:hover {
+          color: #1da1f2;
+        }
+      }
     }
   }
-  .social-links {
-    display: flex;
-    li {
-      padding: 0 1.4em;
+
+  .socialDark {
+    background: #333;
+    #social {
+      &:hover a {
+        color: #888;
+      }
+      a {
+        color: #eee;
+      }
+      .fa-linkedin {
+        &:hover{
+          color: #007bb5;
+        }
+      }
+      .fa-facebook {
+        &:hover{
+          color: #3b5998;
+        }
+      }
+      .fa-twitter {
+        &:hover{
+          color: #1da1f2;
+        }
+      }
+      .fa-instagram {
+        &:hover{
+          color: #c32aa3;
+        }
+      }
+      .fa-youtube {
+        &:hover{
+          color: #ff0000;
+        }
+      }
+      .fa-snapchat {
+        &:hover{
+          color: #fffc00;
+        }
+      }
     }
   }
 }

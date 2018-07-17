@@ -1,11 +1,6 @@
 <section id="app-section">
   <div id="app"></div>
 </section>
-<!-- <section id="welcome-image"> -->
-<!--   <div class="image-section"> -->
-<!--     <img src="../img/background.jpg" alt="krafty don shop image"> -->
-<!--   </div> -->
-<!-- </section> -->
 <section id="about">
   <div class="wrapper">
     <h2> Thee Krafty Don Shop</h2>
@@ -15,84 +10,7 @@
   </div>
   <img src="../img/camila.jpg" alt="">
 </section>
-<section id="cards">
-  <div class="column">
-    <div class="card">
-      <img src="img/life.png" alt="Jane" style="width:100%; height: 22em;">
-      <div class="container">
-        <h2>Tested Code</h2>
-        <p class="title">Available &amp; Onstock</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>Screwed</p>
-        <p><button class="button">Add to Cart &#128717;</button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="img/code-photo.jpg" alt="Mike" style="width:100%; height: 22em;">
-      <div class="container">
-        <h2>Home: 127.0.0.1</h2>
-        <p class="title">Art</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>Some fucked up lorem</p>
-        <p><button class="button">Add to Cart &#128717;</button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="img/day-code.jpg" alt="John" style="width:100%; height: 22em;">
-      <div class="container">
-        <h2>I love Js</h2>
-        <p class="title">Solely Crafted</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>script(" how js works ")</p>
-        <p><button class="button">Add to Cart &#128717;</button></p>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="parallax-section">
-  <div class="parallax">
-    <div class="parallax-text">
-      <h1> About Us </h1>
-      <p>This will be a general description of the shop and what it does and how it actually operates
-      This will also be just another text I might get suggestion for...
-      This will be a general description of the shop and what it does and how it actually operates
-      This will also be just another text I might get suggestion for...
-      This will be a general description of the shop and what it does and how it actually operates
-      This will also be just another text I might get suggestion for...
-      This will be a general description of the shop and what it does and how it actually operates
-      This will also be just another text I might get suggestion for...
-      This will be a general description of the shop and what it does and how it actually operates
-      This will also be just another text I might get suggestion for...
-      </p>
-      <button>Click me</button>
-    </div>
-  </div>
-</section>
-<section>
-
-</section>
-<script>
-$(function() {
-$(window).scroll(function() {
-    var winTop = $(window).scrollTop();
-    if (winTop >= 30) {
-          $("body").addClass("sticky-header");
-              
-          } else {
-                $("body").removeClass("sticky-header");
-                    
-          }
-            
-})
-
-})
-</script>
-
-
+{{>tshirtcards}}
+{{>parralax}}
+{{>aftersales}}
 
