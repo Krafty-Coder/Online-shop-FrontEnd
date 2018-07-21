@@ -3,7 +3,7 @@ image: node:9.8.0
 pages:
   script:
   - npm install
-  - npm run build
+  - gulp
 
   artifacts:
     paths:
