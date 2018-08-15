@@ -11,14 +11,10 @@ $(function() {
     var winTop = $(window).scrollTop();
     if (winTop >= 30) {
       $("body").addClass("sticky-header");
-
     } else {
       $("body").removeClass("sticky-header");
-
     }
-
   })
-
 })
 
 //testing with plain guesswork js
