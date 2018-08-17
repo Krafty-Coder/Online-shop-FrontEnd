@@ -1,52 +1,10 @@
 #cards{
-  padding: 1.4em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .column {
-    padding: 1.4em;
-    padding: 3em 0;
-    float: left;
-    width: 30.0%;
-    margin-bottom: 16px;
-    padding: 0 8px;
-    .card {
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      img {
-        border: 1px;
-      }
-      .container {
-        padding: 1em 1em;
-        h2 {
-          font-family: 'Alice', serif;
-          text-align: center;
-        }
-        p {
-          font-family: 'Overlock', cursive;
-          button {
-            width: 100%;
-            background-color: blue;
-            color: white;
-            font-size: 1em;
-            font-family: 'Merienda', cursive;
-            border-radius: 15px;
-            padding: 1em 0;
-          }
-        }
-      }
-    }
-  }
+  height: 70vh;
 
   /* Display the columns below each other instead of side by side on small screens */
   @media screen and (max-width: 650px) {
-    flex: none;
-    display:block;
-    width: 100%;
-    .column {
-      width: 100%;
-      display: block;
-    }
-  }
+  height: 80vh;
+}
 }
 
 
